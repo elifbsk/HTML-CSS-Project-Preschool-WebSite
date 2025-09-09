@@ -114,7 +114,8 @@ li a:hover {
 
 /*HERO*/
 
-.hero {
+.hero {   /*--burdaki resmi düzenle*/
+
   background-image: url(./assets/hero-picture.webp);
   background-size: cover; /* Görseli kırpmadan alanı doldurur */
   background-position: center;
@@ -255,7 +256,7 @@ li a:hover {
 
 /*MONTESSORI BÖLÜMÜ*/
 
-.montessori__content-container {
+.montessori__container {
   display: flex;
   flex-direction: column; /* Stacks items vertically by default on mobile */
   flex-wrap: wrap; /* Still good to have if you ever want to change flex-direction */
@@ -293,14 +294,14 @@ li a:hover {
 
 /*PROGRAMLARIMIZ*/
 
-.programs-container {
+.programs__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   gap: 0.8rem;
   max-width: var(--site-content);
-  margin: 2rem auto 2rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 .programs {
@@ -373,7 +374,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   }
 
    /*MONTESSORI BÖLÜMÜ*/
-  .montessori__content-container {
+  .montessori__container {
     flex-direction: row;
     align-items: stretch;
   }
@@ -387,7 +388,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
 
 @media all and (min-width: 1024.98px) {
   .logo {
-    height: 110px;
+    height: 125px;
   }
 
   .main-header {
@@ -395,7 +396,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   }
 
   .hero {
-    height: 80vh;
+    height: 75vh;
     max-width: var(--site-content);
     border-radius: 20px;
   }
@@ -450,7 +451,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   }
 
   /*MONTESSORI BÖLÜMÜ*/
-  .montessori__content-container {
+  .montessori__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -459,7 +460,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
 
   /*PROGRAMLARIMIZ BÖLÜMÜ*/
 
-  .programs-container {
+  .programs__container {
     gap: 3rem;
   }
 
