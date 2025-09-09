@@ -1,0 +1,475 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --site-content: 1184px;
+  --color-melon: #f6b6ab;
+  --color-grey: #555;
+  --color-white: #f6f3f7;
+  --color-purple: #dacae1;
+  --color-dark-purple: #56445d;
+  --color-blue: #c0dfef;
+  --color-green: #e0f5e9;
+  --color-yellow: #f4eab4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.2rem;
+  max-width: var(--site-content);
+  margin: 0 auto;
+  border-bottom: 0.5rem solid #fff;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-menu {
+  display: block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  left: auto;
+  width: 8rem;
+  height: 16.3rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: right 0.3s ease-in-out;
+  padding-top: 5rem;
+  z-index: 100;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-nav li {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #f1e7ec;
+  padding: 0.6rem 0;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--color-grey);
+  font-weight: 500;
+}
+
+/* Hamburger menüsü açıldığında */
+#menu-toggle:checked ~ .hamburger-label {
+  display: none;
+}
+
+#menu-toggle:checked ~ .close-label {
+  display: block;
+}
+
+#menu-toggle:checked ~ .mobile-nav {
+  right: 0; /* Menüyü ekrana sağdan geri kaydır */
+  left: auto;
+}
+
+.close-label {
+  display: none;
+  z-index: 101; /* Menüden üstte olması için */
+}
+
+.menu-icon {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+}
+
+li a {
+  padding: 0.5rem;
+}
+
+li a:hover {
+  background-color: var(--color-melon);
+  color: var(--color-white);
+  border-radius: 10px;
+}
+
+/*HERO*/
+
+.hero {
+  background-image: url(./assets/hero-picture.webp);
+  background-size: cover; /* Görseli kırpmadan alanı doldurur */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* Typography */
+
+.text--xs {
+  font-size: 0.875rem;
+}
+.text--sm {
+  font-size: 1rem;
+}
+.text--md {
+  font-size: 1.125rem;
+}
+.text--lg {
+  font-size: 1.25rem;
+}
+.text--xl {
+  font-size: 1.5rem;
+}
+.text--2xl {
+  font-size: 1.75rem;
+}
+.text--3xl {
+  font-size: 2rem;
+}
+
+.text--500 {
+  font-weight: 500;
+}
+
+.text--600 {
+  font-weight: 600;
+}
+
+.text--700 {
+  font-weight: 700;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.line-1-2 {
+  line-height: 1.2;
+}
+
+/*Margin, Padding helper class*/
+
+.site-content {
+  max-width: var(--site-content);
+  margin: 0rem auto;
+  padding: 1rem 0.5rem;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mt-0-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.my-0-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*COLORS*/
+
+.text--grey {
+  color: var(--color-grey);
+}
+
+.text--purple {
+  color: var(--color-purple);
+}
+
+.text--dark-purple {
+  color: var(--color-dark-purple);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--melon {
+  color: var(--color-melon);
+}
+
+/* HİKAYEMİZ BÖLÜMÜ */
+
+.ourstory {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-purple) 10%,
+    var(--color-green) 60%,
+    var(--color-yellow)
+  );
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourstory__image img {
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.ourstory__text {
+  padding: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+
+/*MONTESSORI BÖLÜMÜ*/
+
+.montessori__content-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically by default on mobile */
+  flex-wrap: wrap; /* Still good to have if you ever want to change flex-direction */
+  justify-content: center;
+  align-items: center; /* Center items when stacked */
+  gap: 1rem; /* Add a gap between items, adjust as needed */
+  max-width: var(--site-content);
+  margin: 1rem auto; /* Center the container itself */
+  padding: 0 1rem; /* Add some padding on the sides for smaller screens */
+}
+
+.montessori-box {
+  width: 90%;
+  max-width: 250px;
+  color: var(--color-grey);
+  border-radius: 20px;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(246, 182, 171, 0.8),
+    rgba(218, 202, 225, 0.6)
+  );
+  padding: 0.5rem;
+
+  flex: 1 1 100%;
+}
+
+.montessori-box img {
+  max-width: 50px;
+}
+
+.montessori-box {
+  flex: 1 1 23%;
+}
+
+/*PROGRAMLARIMIZ*/
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.8rem;
+  max-width: var(--site-content);
+  margin: 2rem auto 2rem auto;
+}
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 120px;
+  min-width: 140px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-blue),
+    var(--color-purple)
+  );
+  border-radius: 20px;
+  gap: 1rem;
+  position: relative;
+}
+
+.programs img {
+  position: absolute;
+  z-index: 100;
+  max-width: 48px;
+  top: -20px;
+  right: -10px;
+}
+
+/*------MEDIA SORGULARI-------------------*/
+
+/*navbar'daki @media sorgularını tekrar tekrar yazmamak için tablet için aralık vermek yerine 
+tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
+
+/* Tablet sized and sm desktop devices */
+/*--- min width 768px ---*/
+
+@media all and (min-width: 768.98px) 
+
+{
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: var(--color-grey);
+    font-weight: 600;
+  }
+
+  .main-header {
+    padding: 0.5rem 4rem 0.1rem;
+  }
+
+  /*HİKAYEMİZ BÖLÜMÜ*/
+
+  .ourstory__image img {
+    max-width: 500px;
+  }
+
+   /*MONTESSORI BÖLÜMÜ*/
+  .montessori__content-container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .montessori-box {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}
+
+/* Laptop sized and larger deviced */
+
+@media all and (min-width: 1024.98px) {
+  .logo {
+    height: 110px;
+  }
+
+  .main-header {
+    padding: 0.5rem 4rem 0.1rem;
+  }
+
+  .hero {
+    height: 80vh;
+    max-width: var(--site-content);
+    border-radius: 20px;
+  }
+
+  /* Typography */
+
+  .text--xs {
+    font-size: 1rem;
+  }
+
+  .text--sm {
+    font-size: 1.15rem;
+  }
+
+  .text--md {
+    font-size: 1.25rem;
+  }
+
+  .text--lg {
+    font-size: 1.5rem;
+  }
+
+  .text--xl {
+    font-size: 1.75rem;
+  }
+  .text--2xl {
+    font-size: 2rem;
+  }
+  .text--3xl {
+    font-size: 2.5rem;
+  }
+
+  /* HİKAYEMİZ BÖLÜMÜ */
+
+  .site-content {
+    margin: 1.5rem auto;
+  }
+
+  .flex {
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  
+  .ourstory__text {
+    padding: 2rem;
+  }
+
+  .ourstory__image img {
+    max-width: 700px;
+    height: auto;
+  }
+
+  /*MONTESSORI BÖLÜMÜ*/
+  .montessori__content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  /*PROGRAMLARIMIZ BÖLÜMÜ*/
+
+  .programs-container {
+    gap: 3rem;
+  }
+
+  .programs {
+    min-height: 180px;
+    min-width: 200px;
+    gap: 1rem;
+  }
+
+  .programs img {
+    max-width: 64px;
+  }
+}
