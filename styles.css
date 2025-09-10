@@ -12,6 +12,9 @@
   --color-blue: #c0dfef;
   --color-green: #e0f5e9;
   --color-yellow: #f4eab4;
+  --radius-small: 5px;
+  --radius-medium: 10px;
+  --radius-large: 20px;
 }
 
 body {
@@ -109,12 +112,13 @@ li a {
 li a:hover {
   background-color: var(--color-melon);
   color: var(--color-white);
-  border-radius: 10px;
+  border-radius: var(--radius-medium);
 }
 
 /*HERO*/
 
-.hero {   /*--burdaki resmi düzenle*/
+.hero {
+  /*--burdaki resmi düzenle*/
 
   background-image: url(./assets/hero-picture.webp);
   background-size: cover; /* Görseli kırpmadan alanı doldurur */
@@ -158,7 +162,7 @@ li a:hover {
   font-size: 1.75rem;
 }
 .text--3xl {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .text--500 {
@@ -181,12 +185,12 @@ li a:hover {
   line-height: 1.2;
 }
 
-/*Margin, Padding helper class*/
+/*Genel class'lar*/
 
 .site-content {
   max-width: var(--site-content);
-  margin: 0rem auto;
-  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
 }
 
 .m-auto {
@@ -198,9 +202,13 @@ li a:hover {
   margin-bottom: 0;
 }
 
-.my-0-5 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.mb-1 {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.radius-20 {
+  border-radius: var(--radius-medium);
 }
 
 /*COLORS*/
@@ -246,7 +254,7 @@ li a:hover {
 .ourstory__image img {
   max-width: 300px;
   margin: 1rem;
-  border-radius: 20px;
+  border-radius: var(--radius-large);
 }
 
 .ourstory__text {
@@ -258,21 +266,21 @@ li a:hover {
 
 .montessori__container {
   display: flex;
-  flex-direction: column; /* Stacks items vertically by default on mobile */
-  flex-wrap: wrap; /* Still good to have if you ever want to change flex-direction */
+  flex-direction: column; 
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* Center items when stacked */
-  gap: 1rem; /* Add a gap between items, adjust as needed */
+  align-items: center;
+  gap: 1rem;
   max-width: var(--site-content);
-  margin: 1rem auto; /* Center the container itself */
-  padding: 0 1rem; /* Add some padding on the sides for smaller screens */
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .montessori-box {
   width: 90%;
   max-width: 250px;
   color: var(--color-grey);
-  border-radius: 20px;
+  border-radius: var(--radius-large);
   text-align: center;
   background-image: linear-gradient(
     to bottom right,
@@ -301,7 +309,7 @@ li a:hover {
   align-items: stretch;
   gap: 0.8rem;
   max-width: var(--site-content);
-  margin: 1rem auto 2rem auto;
+  margin: 1rem auto 0.5rem auto;
 }
 
 .programs {
@@ -317,7 +325,7 @@ li a:hover {
     var(--color-blue),
     var(--color-purple)
   );
-  border-radius: 20px;
+  border-radius: var(--radius-large);
   gap: 1rem;
   position: relative;
 }
@@ -330,6 +338,47 @@ li a:hover {
   right: -10px;
 }
 
+/*BİZDEN KARELER*/
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  gap: 0.5rem;
+}
+
+.gallery__container img {
+  width: 100%; /* Resimlerin sütun genişliğini doldurmasını sağlar */
+  height: 100%; /* Oranları korur */
+  display: block; /* Altındaki boşluğu kaldırır */
+  border-radius: var(--radius-small);
+  object-fit: cover;
+  border: 5px solid var(--color-melon);
+}
+
+.gallery__container img:nth-child(3),
+.gallery__container img:nth-child(5),
+.gallery__container img:nth-child(7),
+.gallery__container img:nth-child(10) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.gallery__container img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery__container img:hover {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 /*------MEDIA SORGULARI-------------------*/
 
 /*navbar'daki @media sorgularını tekrar tekrar yazmamak için tablet için aralık vermek yerine 
@@ -338,9 +387,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
 /* Tablet sized and sm desktop devices */
 /*--- min width 768px ---*/
 
-@media all and (min-width: 768.98px) 
-
-{
+@media all and (min-width: 768.98px) {
   .desktop-nav {
     display: block;
   }
@@ -373,7 +420,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     max-width: 500px;
   }
 
-   /*MONTESSORI BÖLÜMÜ*/
+  /*MONTESSORI BÖLÜMÜ*/
   .montessori__container {
     flex-direction: row;
     align-items: stretch;
@@ -398,7 +445,6 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   .hero {
     height: 75vh;
     max-width: var(--site-content);
-    border-radius: 20px;
   }
 
   /* Typography */
@@ -426,7 +472,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     font-size: 2rem;
   }
   .text--3xl {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   /* HİKAYEMİZ BÖLÜMÜ */
@@ -440,7 +486,6 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     gap: 2rem;
   }
 
-  
   .ourstory__text {
     padding: 2rem;
   }
