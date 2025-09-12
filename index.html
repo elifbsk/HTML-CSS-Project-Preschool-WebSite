@@ -25,11 +25,11 @@
   <a href="./index.html"><img src="././assets/logo.svg" class="logo" alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"></a>
   
   <nav class="desktop-nav text--sm" aria-label="Ana Masaüstü Navigasyonu">
-    <ul>
+    <ul class="list-style-none">
       <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="#">Hakkımızda</a></li>
         <li><a href="#">Bizde Yaşam</a></li>
-        <li><a href="#">Kayıt</a></li>
+        <li><a href="#anilarimiz">Anılarımız</a></li>
         <li><a href="#">İletişim</a></li>
     </ul>
   </nav>
@@ -46,11 +46,11 @@
   </label>
     
     <nav class="mobile-nav text--sm" aria-label="Ana Mobil Navigasyonu">
-      <ul>
-        <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <ul class="list-style-none">
+        <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="#">Hakkımızda</a></li>
         <li><a href="#">Bizde Yaşam</a></li>
-        <li><a href="#">Kayıt</a></li>
+        <li><a href="#anilarimiz">Anılarımız</a></li>
         <li><a href="#">İletişim</a></li>
       </ul>
     </nav>
@@ -135,7 +135,7 @@
       Çocuklarımızın hayal güçlerini geliştiren ve yeteneklerini ortaya çıkaran
       eğlenceli atölyelerimize göz atın...
     </p>
-    <ul class="text--dark-purple text--md text--600">
+    <ul class="list-style-none text--md text--600 text--dark-purple">
     <li><i class="fa-solid fa-palette"></i>Drama</li>
                 <li><i class="fa-solid fa-music"></i>Orf</li>
                 <li><i class="fa-solid fa-screwdriver-wrench"></i>Robotik Kodlama</li>
@@ -174,7 +174,7 @@
 
 <!--PROGRAMLARIMIZ-->
 
-<section class="mt-1-5">
+<section class="mt-1-5" id="programlar">
 <h2 class="text--center text--grey text--lg text-600">PROGRAMLARIMIZ</h2>
 
 <div class="programs__container text--lg line-1-4 text--600 text--dark-purple">
@@ -203,11 +203,11 @@
 
 </section>
 
-<!--BİZDEN KARELER-->
+<!--ANILARIMIZ-->
 
-<section class="site-content">
+<section class="site-content" id="anilarimiz">
 
-<h2 class="text--center text--grey text--lg text-600 mb-1">BİZDEN KARELER</h2>
+<h2 class="text--center text--grey text--lg text-600 mb-1">ANILARIMIZ</h2>
 <div class="gallery__container">
 
 <img src="./assets/gallery/gallery-picture-1.webp" alt="">
@@ -224,10 +224,45 @@
 
 </section>
 
-
-
-
 </main>
+
+<!--FOOTER-->
+
+<footer>
+        <div class="footer__container">
+          <div class="footer__section footer__logo">
+            <a href="./index.html"><img src="././assets/logo.svg" class="logo" alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"></a>
+            </div>
+            <div class="footer__section about">
+                <h3>Hakkımızda</h3>
+                <p class="text--xs line-1-4 text--dark-purple">Renkli Meşe Montessori Anaokulu çocukların doğayla el ele, Montessori ruhuyla büyüdüğü bir dünya. Sevgiyle büyüyoruz, özgürce oynayarak keşfediyoruz.</p>
+                
+            </div>
+            <div class="footer__section quick-links">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul class="list-style-none">
+                    <li><a href="index.html" class="text--xs text--dark-purple">Anasayfa</a></li>
+                    <li><a href="#" class="text--xs text--dark-purple">Hakkımızda</a></li>
+                    <li><a href="#programlar" class="text--xs text--dark-purple">Programlarımız</a></li>
+                    <li><a href="#" class="text--xs text--dark-purple">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="#" class="text--xs text--dark-purple">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer__section contact">
+                <h3>İletişim</h3>
+                <ul class="list-style-none text--xs line-1-4">
+                    <li><p>Adres: Örnek Cad. No: 123, Şehir, Ülke</p></li>
+                    <li><p>Email: info@example.com</p></li>
+                    <li><p>Telefon: +90 123 456 7890</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom text--xs text--center text--grey">
+            &copy; 2025 Renkli Meşe Anaokulu. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+
 
 
 </body>

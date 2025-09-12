@@ -60,9 +60,6 @@ body {
 }
 
 .mobile-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +106,7 @@ li a {
   padding: 0.5rem;
 }
 
-li a:hover {
+nav li a:hover {
   background-color: var(--color-melon);
   color: var(--color-white);
   border-radius: var(--radius-medium);
@@ -202,13 +199,19 @@ li a:hover {
   margin-bottom: 0;
 }
 
-.mt-2{
+.mt-2 {
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
 .radius-20 {
   border-radius: var(--radius-medium);
+}
+
+.list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*COLORS*/
@@ -241,7 +244,8 @@ li a:hover {
     var(--color-purple) 10%,
     var(--color-green) 60%,
     var(--color-yellow)
-  )}
+  );
+}
 
 .flex {
   display: flex;
@@ -333,17 +337,19 @@ li a:hover {
 }
 
 .atolye__text-box {
-  padding:1rem 2rem 0.5rem 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
   min-width: 300px;
   text-align: left;
   border: 3px solid var(--color-green);
   border-radius: var(--radius-large);
-  background-image: linear-gradient(to bottom right, var(--color-purple),var(--color-green)) ;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-purple),
+    var(--color-green)
+  );
 }
 
 .atolye__text-box ul {
-  list-style: none;
-  padding: 0;
   margin-top: 1.5rem;
 }
 
@@ -434,6 +440,67 @@ li a:hover {
   }
 }
 
+/*FOOTER*/
+
+footer {
+  color: var(--color-dark-purple);
+  padding: 0 1.5rem;
+  margin-top: auto; /* Sayfanın altına yapışmasını sağlar */
+
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap; /* Küçük ekranlarda alt alta gelmesini sağlar */
+  max-width: var(--site-content);
+  margin: 0 auto;
+  border-top: 1px solid var(--color-purple)
+}
+.footer__section {
+  min-width: 200px; /* Minimum genişlik belirler */
+  margin: 0;
+}
+
+.footer__logo{
+  min-width:fit-content;
+  margin:0 auto;
+  padding-top:1rem;
+  
+}
+
+ .footer__logo img{
+    height: 80px;
+  }
+
+.footer__section h3 {
+  color: var(--color-grey);
+  margin-bottom: 1.3rem;
+  
+}
+
+.footer__section ul li {
+  margin-bottom: 1rem;
+}
+.footer__section ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer__section ul li a:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border-radius: var(--radius-medium);
+}
+
+.footer__bottom {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--color-purple);
+}
+
+
+
+
 /*------MEDIA SORGULARI-------------------*/
 
 /*navbar'daki @media sorgularını tekrar tekrar yazmamak için tablet için aralık vermek yerine 
@@ -452,9 +519,6 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   }
 
   .desktop-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 1.5rem;
   }
@@ -480,7 +544,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
 
   .montessori-box {
     flex: 1 1 calc(50% - 0.5rem);
-  max-width: 320px;
+    max-width: 320px;
   }
 
   .atolye__container {
@@ -490,30 +554,50 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   .atolye__images {
     flex: 1;
     padding: 1.5rem;
-    gap:1.5rem;
+    gap: 1.5rem;
   }
 
   .atolye__text-box {
     flex: 0.8;
-  padding:0.5rem 1rem 0 1rem;
-    
+    padding: 0.5rem 1rem 0 1rem;
   }
 
   .atolye-daire {
     width: 150px;
     height: 150px;
   }
+
+.footer__container { 
+  justify-content: space-between;
+  align-items: baseline;}
+
+
+.footer__section {
+  flex: 1; /* Esnek bir şekilde genişlemesini sağlar */
+  min-width: 150px; /* Minimum genişlik belirler */
+  margin: 0.5rem;
+}
+
+.footer__logo {
+  align-self: center;
+   padding:0;
+}
+
+.footer__logo img{
+    height: 120px;
+  }
+
 }
 
 /*-------------------------*/
 /* LAPTOP SIZED AND LARGER */
 
 @media all and (min-width: 1024.98px) {
-  .logo {
+  .main-header .logo {
     height: 125px;
   }
 
-.main-header {
+  .main-header {
     padding: 0.5rem 4rem 0.1rem;
   }
 
@@ -575,8 +659,9 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     align-items: stretch;
   }
 
-.montessori-box {
-  max-width: 250px;}
+  .montessori-box {
+    max-width: 250px;
+  }
 
   .atolye__images {
     gap: 2rem;
@@ -596,4 +681,17 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   .programs img {
     max-width: 64px;
   }
+
+
+.footer__section {
+  min-width: 200px; /* Minimum genişlik belirler */
+  margin: 1.8rem;
+}
+
+
+ .footer__logo img{
+    height: 150px;
+  }
+
+
 }
