@@ -18,6 +18,10 @@
   --radius-large: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,7 +32,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem 0.2rem;
   max-width: var(--site-content);
   margin: 0 auto;
   border-bottom: 0.5rem solid #fff;
@@ -204,8 +207,8 @@ nav li a:hover {
   margin-bottom: 0;
 }
 
-.radius-20 {
-  border-radius: var(--radius-medium);
+.radius-lg {
+  border-radius: var(--radius-large);
 }
 
 .list-style-none {
@@ -274,9 +277,7 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  max-width: var(--site-content);
-  margin: 0 auto;
-  padding: 0 1rem;
+  
 }
 
 .montessori-box {
@@ -370,8 +371,6 @@ nav li a:hover {
   justify-content: center;
   align-items: stretch;
   gap: 0.8rem;
-  max-width: var(--site-content);
-  margin: 1rem auto 1rem auto;
 }
 
 .programs {
@@ -438,6 +437,10 @@ nav li a:hover {
     transform: none;
     box-shadow: none;
   }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /*FOOTER*/
@@ -452,8 +455,6 @@ footer {
 .footer__container {
   display: flex;
   flex-wrap: wrap; /* Küçük ekranlarda alt alta gelmesini sağlar */
-  max-width: var(--site-content);
-  margin: 0 auto;
   border-top: 1px solid var(--color-purple)
 }
 .footer__section {
@@ -603,7 +604,7 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
 
   .hero {
     height: 75vh;
-    max-width: var(--site-content);
+
   }
 
   /* Typography */

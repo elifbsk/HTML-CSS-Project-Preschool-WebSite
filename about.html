@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    
+    <!--NAVBAR-->
+    <header class="main-header">
+      <a href="./index.html"
+        ><img
+          src="././assets/logo.svg"
+          class="logo"
+          alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"
+      /></a>
+
+      <nav class="desktop-nav text--sm" aria-label="Ana Masaüstü Navigasyonu">
+        <ul class="list-style-none">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="#">Bizde Yaşam</a></li>
+          <li><a href="index.html#anilarimiz">Anılarımız</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="menu-icon hamburger-label">
+          <img
+            src="././assets/menu-burger-horizontal-svgrepo-com (1).svg"
+            alt="Menüyü açar."
+          />
+        </label>
+
+        <label for="menu-toggle" class="menu-icon close-label">
+          <img
+            src="././assets/close-button-svgrepo-com.svg"
+            alt="Menüyü kapatır."
+          />
+        </label>
+
+        <nav class="mobile-nav text--sm" aria-label="Ana Mobil Navigasyonu">
+          <ul class="list-style-none">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Bizde Yaşam</a></li>
+            <li><a href="index.html#anilarimiz">Anılarımız</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hakkımızda flex site-content text--center">
+        <div class="hakkımızda__image">
+          <picture>
+            <source
+              srcset="./assets/about/oaktree-sm.webp"
+              media="(max-width:465px)"
+            />
+            <source
+              srcset="./assets/about/oaktree-lg.webp"
+              media="(min-width:465.98px)"
+            />
+            <img
+              src="./assets/about/oaktree-lg.webp"
+              alt="Açıklayıcı bir metin"
+            />
+          </picture>
+        </div>
+
+        <div class="hakkımızda__textbox">
+          <h2 class="text--grey text--lg text-600">BİR HAYAL KURDUK..</h2>
+          <p class="text--grey text--sm line-1-4">
+            Renkli Meşe Montessori Anaokulu, 2015 yılında, çocukların merak
+            duygusunu besleyen, özgürce keşfedebilecekleri ve mutlu bir şekilde
+            büyüyebilecekleri bir öğrenme ortamı oluşturma hayaliyle kuruldu.
+            Bahçemizdeki meşe ağacı 10 yılı aşkın süredir çocuklarımızın
+            hayallerine, kahkahalarına ve oyunlarına ev sahipliği yapıyor.
+            Montessori yaklaşımını benimseyerek her çocuğun benzersiz ve kendine
+            özgü bir öğrenme yolculuğu olduğunu kabul ediyoruz. Onlara, kendi
+            hızlarında ve merak ettikleri konular etrafında gelişmelerini
+            sağlayan bir ortam sunuyoruz. Bu sayede çocuklarımız yalnızca
+            akademik beceriler değil, aynı zamanda özgüven, sorumluluk duygusu
+            ve bağımsızlık da kazanıyor. Renkli Meşe ailesi olarak, her gün
+            çocuklarımızın gözlerindeki merak ışığını görmenin mutluluğu ve
+            gururuyla yolumuza devam ediyoruz.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimonials site-content">
+        <h2 class="text--grey text--lg text-600 text--center">
+          VELİLERİMİZDEN GÖRÜŞLER
+        </h2>
+
+        <div class="testimonials-grid-container">
+          <div class="testimonial-card">
+            <p class="quote-text text--sm text--grey">
+              "Montessori yaklaşımının bu kadar etkili olacağını tahmin
+              etmezdim. Deniz artık kendi kendine giyinip yemeğini
+              düzenleyebiliyor ve bunu büyük bir keyifle yapıyor. Çocuğumun
+              bağımsızlık duygusunun geliştiğini görmek beni çok mutlu ediyor.""
+            </p>
+            <p class="author text--md">
+              - Emre B. – 4,5 yaşındaki Bahar’ın babası
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-text text--sm text--grey">
+              "Arda okula başladığından beri hem özgüveni hem de merakı arttı.
+              Her sabah heyecanla uyanıp kendi çantasını hazırlıyor, hatta bana
+              'anne ben kendim yapabilirim' diyor. Renkli Meşe sadece bir okul
+              değil, çocuğumun ikinci yuvası oldu."
+            </p>
+            <p class="author text--md">
+              - İdil Y. – 4 yaşındaki Arda’nın annesi
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-text text--sm text--grey">
+              "Okulun bahçesindeki büyük meşe ağacını ilk gördüğüm günü
+              hatırlıyorum, bana çok güven vermişti. Çocukların özgürce
+              oynayabileceği, keşfedebileceği doğal bir ortam var. Burada
+              çocuğumun sadece akademik değil, duygusal olarak da çok
+              geliştiğini görmek harika."
+            </p>
+            <p class="author text--md">
+              - Mehmet T. 5 yaşındaki Derin’in babası
+            </p>
+          </div>
+
+          <div class="testimonial-card text--sm text--grey">
+            <p class="quote-text text--sm">
+              "İlk kez kreşe başlarken çok endişeliydim, Mira nasıl alışacak
+              diye... Ama öğretmenler o kadar ilgili ve sıcak davrandılar ki
+              kısa sürede tüm kaygılarım geçti. Şimdi Mira eve geldiğinde bana
+              gün boyu öğrendiklerini heyecanla anlatıyor, her sabah okula
+              gitmek için sabırsızlanıyor."
+            </p>
+            <p class="author text--md">
+              - Ayşe Y. – 3 yaşındaki Mira’nın annesi
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

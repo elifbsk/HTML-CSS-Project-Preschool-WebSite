@@ -1,0 +1,82 @@
+.hakkımızda__image {
+  opacity: 0.7;
+  padding: 1.5rem;
+}
+
+.hakkımızda__image picture {
+  border-radius: var(--radius-large); /* İstediğiniz değeri verin */
+  overflow: hidden;
+  display: inline-block;
+  max-width: 300px;
+}
+
+/* TESTIMONIALS*/
+
+.testimonials {
+  padding: 1.5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-green) 30%,
+    var(--color-yellow)
+  );
+}
+
+/* Izgara kapsayıcısı */
+.testimonials-grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  ); /* Esnek sütunlar */
+  gap: 1rem;
+}
+
+/* Yorum kartı */
+.testimonial-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-medium);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-text {
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Yazar adı */
+.author {
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+  color: #d1759d;
+}
+
+@media all and (min-width: 768px) {
+  .hakkımızda__image {
+    text-align: left;
+  }
+
+  .hakkımızda__image picture {
+    max-width: 500px;
+  }
+
+  .testimonials-grid-container {
+    gap: 5.7rem;
+  }
+}
+
+@media all and (min-width: 1024.98px) {
+  .hakkımızda__image picture {
+    max-width: 600px;
+  }
+}
