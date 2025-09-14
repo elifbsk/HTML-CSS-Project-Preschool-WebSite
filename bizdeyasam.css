@@ -1,0 +1,33 @@
+.rutinimiz__container {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-green) 5%,
+    var(--color-yellow)
+  );
+  padding: 2rem;
+  border-radius: var(--radius-large);
+}
+
+.beslenme__image img {
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: var(--radius-large);
+}
+
+.beslenme__text {
+  padding: 1rem 1rem 0 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .bizdeyasam h2 {
+    text-align: left;
+  }
+
+  .rutinimiz__container{text-align: left;}
+
+  .beslenme__text{text-align:left;}
+
+  .beslenme__image img {
+    max-width: 600px;
+  }
+}

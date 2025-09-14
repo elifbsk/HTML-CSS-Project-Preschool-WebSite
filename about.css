@@ -14,11 +14,13 @@
 
 .testimonials {
   padding: 1.5rem;
+  border-radius: var(--radius-large);
   background-image: linear-gradient(
     to bottom right,
     var(--color-green) 30%,
     var(--color-yellow)
   );
+  margin-bottom: 3rem;
 }
 
 /* Izgara kapsayıcısı */
@@ -26,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(320px, 1fr)
+    minmax(200px, 1fr)
   ); /* Esnek sütunlar */
   gap: 1rem;
 }
@@ -61,22 +63,20 @@
   color: #d1759d;
 }
 
-@media all and (min-width: 768px) {
-  .hakkımızda__image {
-    text-align: left;
-  }
 
+@media all and (min-width: 768px) {
   .hakkımızda__image picture {
     max-width: 500px;
-  }
-
-  .testimonials-grid-container {
-    gap: 5.7rem;
   }
 }
 
 @media all and (min-width: 1024.98px) {
   .hakkımızda__image picture {
     max-width: 600px;
+  }
+
+  .testimonials-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3rem;
   }
 }

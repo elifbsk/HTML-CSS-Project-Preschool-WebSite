@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="TO BE UPDATED"> <!--burayı unutma-->
+    <meta description="Renkli Meşe Anaokulu, çocuklara sevgi dolu, güvenli ve eğitici bir ortam sunar. Montessori yaklaşımıyla bireysel gelişimi destekleyen programlarımızı keşfedin.">
     <title>Renkli Meşe Montessori Anaokulu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-   <link rel="preload" as="image" href="./assets/hero-picture.webp">
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -28,9 +27,9 @@
     <ul class="list-style-none">
       <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="about.html">Hakkımızda</a></li>
-        <li><a href="#">Bizde Yaşam</a></li>
+        <li><a href="bizdeyasam.html">Bizde Yaşam</a></li>
         <li><a href="#anilarimiz">Anılarımız</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="contact.html">İletişim</a></li>
     </ul>
   </nav>
 
@@ -38,20 +37,20 @@
   <input type="checkbox" id="menu-toggle">
 
   <label for="menu-toggle" class="menu-icon hamburger-label">
-    <img src="././assets/menu-burger-horizontal-svgrepo-com (1).svg" alt="Menüyü açar.">
+    <img src="./assets/hamburger-button.svg" alt="Menüyü aç.">
   </label>
   
   <label for="menu-toggle" class="menu-icon close-label">
-    <img src="././assets/close-button-svgrepo-com.svg" alt="Menüyü kapatır.">
+    <img src="./assets/close-button.svg" alt="Menüyü kapat.">
   </label>
     
     <nav class="mobile-nav text--sm" aria-label="Ana Mobil Navigasyonu">
       <ul class="list-style-none">
         <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="about.html">Hakkımızda</a></li>
-        <li><a href="#">Bizde Yaşam</a></li>
+        <li><a href="bizdeyasam.html">Bizde Yaşam</a></li>
         <li><a href="#anilarimiz">Anılarımız</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="contact.html">İletişim</a></li>
       </ul>
     </nav>
   </div>
@@ -60,8 +59,8 @@
 <!--HERO-->
 <main>
 
-<section class="hero site-content radius-lg"> <!--açıklamayı düzenle-->
-<img src="./assets/hero-picture.webp" alt="" class="sr-only">
+<section class="hero site-content radius-lg">
+<img src="./assets/hero-picture-sronly.webp" alt="Bir ağaca sarılan sevimli bir kız çocuğu. Çocuğun yüzü ağacın arkasından kısmen görünüyor ve kameraya doğru gülümsüyor." class="sr-only">
   <h1 class="text--3xl text--700 text--center text--white">Sevgiyle Büyü, Özgürce Keşfet! </h1>
 </section> 
 
@@ -69,7 +68,7 @@
 <section class="hikayemiz flex site-content radius-lg">
 
 <div class="hikayemiz__text">
-<h2 class="m-auto text--grey text--lg text-600">HİKAYEMİZ</h1>
+<h2 class="m-auto text--grey text--lg text-600"> HİKAYEMİZ </h2>
 <p class="text--grey line-1-4 mt-0-5 text--xs">Renkli Çınar Montessori Anaokulu, çocukların özgürce öğrenebilecekleri, kendilerini keşfedebilecekleri 
   ve mutlu bir şekilde büyüyebilecekleri bir ortam yaratma hayaliyle kuruldu. 
 <p class="text--grey line-1-4 text--xs">Bahçemizin tam ortasında, kökleri derinlere uzanan büyük bir meşe ağacı var. 
@@ -80,11 +79,11 @@
 </div>
 
 
-  <div class="hikayemiz__image">  <!--burdaki açıklamaları düzenle-->
+  <div class="hikayemiz__image">
 <picture>
   <source srcset="./assets/ourstory-picture(sm).webp" media="(max-width:465px)">
   <source srcset="./assets/ourstory-picture(lg).webp" media="(min-width:465.98px)">
-  <img src="./assets/ourstory-picture(lg).webp"  alt="Açıklayıcı bir metin">
+  <img src="./assets/ourstory-picture(lg).webp"  alt="Doğada neşeyle oynayan dört çocuk. Ağacın arkasından bakan çocuklar gülümsüyor, arkadaki bir çocuk kahkahalarla gülüyor.">
 </picture>
 </div>
 
@@ -97,26 +96,26 @@
 <h2 class="text--center text--grey text--lg text-600">MONTESSORI YAKLAŞIMI</h2>
 <div class="montessori__container">
   <div class="montessori-box flex-basis-50">
-    <img src="./assets/abc-cubes-svgrepo.svg" alt="TOBEUPDATED">
+    <img src="./assets/abc-cubes-svgrepo.svg" alt="A, B ve C harflerinin yer aldığı eğitim blokları">
     <h3 class="text--md my-0-5 text--dark-purple">Hazırlanmış Ortam</h3>
     <p class="text--xs text--dark-purple line-1-4"> Montessori'de sınıf, çocuğun kendi kendine keşfedebilmesi için özel olarak tasarlanmış bir "hazırlanmış ortam"dır. Bu ortamda her materyal, çocuğun boyuna ve gelişim seviyesine uygun olarak düzenlenir. Sınıflarımız bu şekilde çocuklarımızın bağımsız hareket edebileceği şekilde tasarlanır. 
       Materyaller düzenli ve ulaşılabilir bir şekilde yerleştirilir, bu şekilde çocuklar kendi düzenlerini korumayı da öğrenirler.
     </p>
   </div>
   <div class="montessori-box flex-basis-50">
-    <img src="./assets/star-svgrepo.svg" alt="TOBEUPDATED">
+    <img src="./assets/star-svgrepo.svg" alt="Çocuğun gelişim aşamalarını temsil eden bir yıldız simgesi">
     <h3 class="text--md my-0-5 text--dark-purple">Sorumluluk</h3>
     <p class="text--xs text--dark-purple line-1-4">Montessori yaklaşımı, çocuğu aktif bir öğrenen ve çevresinin bir parçası olarak görür. Bu bağlamda, sorumluluk da çocuklara erken yaşta kazandırılan ve doğal yollarla geliştirilen önemli bir beceridir. Çevreye Karşı Sorumluluk, Kendine Karşı Sorumluluk, Sosyal Sorumluluk, Özgürlük ve Sorumluluk Dengesi olmak üzere 4 boyutta ele alınır. Bu çok yönlü becerinin doğal akışta kazandırılması amaçlanır.
     </p>
   </div>
   <div class="montessori-box flex-basis-50">
-    <img src="./assets/shapes-svgrepo.svg" alt="TOBEUPDATED">
+    <img src="./assets/shapes-svgrepo.svg" alt="Somut materyalleri temsil eden, üzerinde üçgen kare daire gibi şekiller bulunan bir oyuncak">
     <h3 class="text--md my-0-5 text--dark-purple">Somut Materyallerle Öğrenme</h3>
     <p class="text--xs text--dark-purple line-1-4">Çocuklarımız, soyut kavramları (sayılar, harfler, geometrik şekiller gibi) somut, dokunulabilir Montessori materyalleriyle deneyimleyerek öğrenirler. Bu materyaller, çocuğun kendi hatalarını fark etmesini ve düzeltmesini sağlayarak derinlemesine ve kalıcı öğrenmeyi destekler.
     </p>
   </div>
   <div class="montessori-box flex-basis-50">
-    <img src="./assets/puzzle-piece-svgrepo.svg" alt="TOBEUPDATED">
+    <img src="./assets/puzzle-piece-svgrepo.svg" alt="Her çocuğun öğrenme yolculuğunun benzersiz olduğunu simgeleyen puzzle parçası">
     <h3 class="text--md my-0-5 text--dark-purple">Bireysel Öğrenme ve Gelişim</h3>
     <p class="text--xs text--dark-purple line-1-4">Montessori felsefesinin kalbinde, her çocuğun kendine özgü bir hızda ve tarzda öğrenen, keşfeden ve gelişen benzersiz bir birey olduğu inancı yatar. Bu ilke, geleneksel sınıf ortamlarından farklı olarak, her çocuğun bireysel ihtiyaçlarına ve potansiyeline odaklanılmasını sağlar.Bu sayede çocuklar, kendi potansiyellerini keşfeder, kendilerine güvenir ve yaşam boyu öğrenmeye istekli bireyler olarak yetişirler.
     </p>
@@ -127,7 +126,7 @@
 <!--ATÖLYELERİMİZ BÖLÜMÜ-->
 
 
-<section class="atolye__container site-content">
+<section class="atolye__container site-content" id="atolye">
  
   <div class="atolye__text-box">
     <h2 class="text--grey text--lg text-600 text--center">ATÖLYELERİMİZ</h2>
@@ -151,22 +150,22 @@
 
    <div class="atolye__images">
     <div class="atolye-daire">
-      <img src="./assets/AdobeStock_115860598_Preview.webp" alt="" />
+      <img src="./assets/atolye-drama-image.webp" alt="Drama dersinde gülümseyerek rol yapan çocuklar" />
     </div>
     <div class="atolye-daire">
-      <img src="assets/AdobeStock_37484878_Preview.webp" alt="" />
+      <img src="assets/atolye-orff-image.webp" alt="Vurmalı bir ritm aleti ve çubuklarla onu çalan minik çocuk elleri" />
     </div>
     <div class="atolye-daire">
-      <img src="./assets/AdobeStock_561552352_Preview.webp" alt="" />
+      <img src="./assets/atolye-robotic-image.webp" alt="Roborik kodlama ile çalışma yapan küçük bir kız" />
     </div>
     <div class="atolye-daire">
-      <img src="./assets/AdobeStock_210187231_Preview.webp" alt="" />
+      <img src="./assets/atolye-gym-image.webp" alt="Bir elleri yerde bir elleri havada şekilde duran,jimnastik yapan çocuklar" />
     </div>
     <div class="atolye-daire">
-      <img src="./assets/AdobeStock_81120329_Preview.jpeg" alt="" />
+      <img src="./assets/atolye-english-image.webp" alt="Elinde 'Do you speak English?' yazısı tutan küçük bir çocuk" />
     </div>
     <div class="atolye-daire">
-      <img src="./assets/AdobeStock_304732847_Preview.webp" alt="" />
+      <img src="./assets/atolye-mutfak-image.webp" alt="Okul mutfağında yemek yapan çocuklar" />
     </div>
   </div>
 </section>
@@ -174,18 +173,18 @@
 
 <!--PROGRAMLARIMIZ-->
 
-<section class="programlarımız site-content" id="programlar">
+<section class="programlarımız site-content">
 <h2 class="text--center text--grey text--lg text-600">PROGRAMLARIMIZ</h2>
 
 <div class="programs__container text--lg line-1-4 text--600 text--dark-purple">
   
 <div class="toddler programs">
-<img src="./assets/bunny-image.svg" alt="TOBEUPDATED">
+<img src="./assets/bunny-image.svg" alt="">
 <p>Toddler <br>18 ay - 3 yaş</p>
 </div>
 
 <div class="preschool programs">
-  <img src="./assets/koala-image.svg" alt="TOBEUPDATED">
+  <img src="./assets/koala-image.svg" alt="">
 <p>Anaokulu <br>3 - 6 yaş</p>
 </div>
 
@@ -210,16 +209,16 @@
 <h2 class="text--center text--grey text--lg text-600 mb-1">ANILARIMIZ</h2>
 <div class="gallery__container">
 
-<img src="./assets/gallery/gallery-picture-1.webp" alt="">
-<img src="./assets/gallery/gallery-picture-2.webp" alt="">
-<img src="./assets/gallery/gallery-picture-3.webp" alt="">
-<img src="./assets/gallery/gallery-picture-4.webp" alt="">
-<img src="./assets/gallery/gallery-picture-5.webp" alt="">
-<img src="./assets/gallery/gallery-picture-6.webp" alt="">
-<img src="./assets/gallery/gallery-picture-7.webp" alt="">
-<img src="./assets/gallery/gallery-picture-8.webp" alt="">
-<img src="./assets/gallery/gallery-picture-9.webp" alt="">
-<img src="./assets/gallery/gallery-picture-10.webp" alt="">
+<img src="./assets/gallery/gallery-picture-1.webp" alt="Sınıf ortamı, canlı ve parlak renklerle tasarlanmış. Küçük masa ve sandalyeler, renkli halı ve raflarda oyuncaklar ve kitaplar bulunuyor.">
+<img src="./assets/gallery/gallery-picture-2.webp" alt="Bir çocuk, Montessori eğitiminde sıkça kullanılan, farklı renklerde boncuklar ve geometrik şekiller içeren ahşap bir kutuyla oynuyor.">
+<img src="./assets/gallery/gallery-picture-3.webp" alt="Sınıfta, bir öğretmen masanın etrafında oturmuş çocuklarla yakından ilgileniyor. Çocuklar, renkli ahşap blokları kullanarak kuleler yapıyor ve öğretmen onlara gülümseyerek rehberlik ediyor.">
+<img src="./assets/gallery/gallery-picture-4.webp" alt="Çocuklar, öğretmenleriyle birlikte bahçede bitki suluyor ve ekip biçiyor. Çocuklardan biri eline aldığı küçük kürekle saksıya toprak koyuyor.">
+<img src="./assets/gallery/gallery-picture-5.webp" alt="Yeşil çimlerin üzerinde sırtüstü uzanmış, neşeli ve gülen altı çocuk. Çocuklar daire şeklinde uzanmış, elleriyle gözlük işareti yaparak kameraya bakıyorlar.">
+<img src="./assets/gallery/gallery-picture-6.webp" alt="Montessori eğitim materyalleriyle dolu bir masada, çocukların motor becerilerini ve mantıksal düşünme yeteneklerini geliştirmeye yönelik renkli ahşap oyuncaklar.">
+<img src="./assets/gallery/gallery-picture-7.webp" alt="Öğretmen ve dört öğrenci, sınıfta yerde oturarak renkli bloklarla oynuyor. Öğretmen, çocuklarla etkileşim halinde, samimi ve sıcak bir öğrenme ortamı oluşturuyor.">
+<img src="./assets/gallery/gallery-picture-8.webp" alt="Sırtı dönük küçük bir kız, duvarda asılı, hayvan resimleri ve harflerle dolu renkli bir alfabeyi inceliyor. Kız, elini harflerin üzerinde gezdirerek öğrenmeye çalışıyor.">
+<img src="./assets/gallery/gallery-picture-9.webp" alt="Çocuklar ve öğretmenleri, sınıfta yerde oturmuş, renkli hayvan figürleri ve enstrümanlarla oynuyorlar.">
+<img src="./assets/gallery/gallery-picture-10.webp" alt="İki öğretmen ve yedi çocuk, minderlerin üzerinde daire şeklinde oturuyor. Öğretmenler çocuklarla neşe içinde konuşurken, bir balon da resimde görülüyor.">
 </div>
 
 </section>
@@ -231,7 +230,7 @@
 <footer>
         <div class="footer__container site-content">
           <div class="footer__section footer__logo">
-            <a href="./index.html"><img src="././assets/logo.svg" class="logo" alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"></a>
+            <a href="./index.html"><img src="./assets/logo.svg" class="logo" alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"></a>
             </div>
             <div class="footer__section about">
                 <h3>Hakkımızda</h3>
@@ -242,18 +241,18 @@
                 <h3>Hızlı Bağlantılar</h3>
                 <ul class="list-style-none">
                     <li><a href="index.html" class="text--xs text--dark-purple">Anasayfa</a></li>
-                    <li><a href="#" class="text--xs text--dark-purple">Hakkımızda</a></li>
-                    <li><a href="#programlar" class="text--xs text--dark-purple">Programlarımız</a></li>
-                    <li><a href="#" class="text--xs text--dark-purple">Sıkça Sorulan Sorular</a></li>
-                    <li><a href="#" class="text--xs text--dark-purple">İletişim</a></li>
+                    <li><a href="about.html" class="text--xs text--dark-purple">Hakkımızda</a></li>
+                    <li><a href="#atolye" class="text--xs text--dark-purple">Atölyelerimiz</a></li>
+                    <li><a href="bizdeyasam.html" class="text--xs text--dark-purple">Bizde Yaşam</a></li>
+                    <li><a href="contact.html" class="text--xs text--dark-purple">İletişim</a></li>
                 </ul>
             </div>
             <div class="footer__section contact">
                 <h3>İletişim</h3>
                 <ul class="list-style-none text--xs line-1-4">
-                    <li><p>Adres: Örnek Cad. No: 123, Şehir, Ülke</p></li>
-                    <li><p>Email: info@example.com</p></li>
-                    <li><p>Telefon: +90 123 456 7890</p></li>
+                    <li><p>Adres: Güneş Cad. No: 123, İzmir, Türkiye</p></li>
+                    <li><p>Email: info@renklimese.com</p></li>
+                    <li><p>Telefon: +90 232 123 4567</p></li>
                 </ul>
             </div>
         </div>
@@ -262,10 +261,5 @@
         </div>
     </footer>
 
-
-
-
 </body>
 </html>
-
-<!--hamburger ve close iconunun rengini değiştir, mor olabilir.-->

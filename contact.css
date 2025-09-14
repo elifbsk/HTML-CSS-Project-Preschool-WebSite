@@ -1,0 +1,37 @@
+
+/* İletişim bilgileri düzeni */
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  flex-basis: calc(50% - 5rem); /* 2 sütunlu düzen */
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+a {
+  color:var(--color-dark-purple);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-item i{font-size:1.5rem;}
+
+
+/* Mobil için 1 sütun */
+@media (max-width: 768px) {
+  .contact-item {
+    flex-basis: 100%;
+  }
+}
