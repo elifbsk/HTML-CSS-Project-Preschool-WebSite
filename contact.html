@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta
+      name="description"
+      content="Renkli Meşe Montessori Anaokulu'na ulaşın. Adres, telefon ve e-posta bilgilerimize göz atın. Bizi sosyal medyada takip edebilir veya randevu almak için telefon numaramızdan bize ulaşabilirsiniz."
+    />
     <title>Renkli Meşe-İletişim</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -22,7 +26,7 @@
     <header class="main-header">
       <a href="./index.html"
         ><img
-          src="././assets/logo.svg"
+          src="./assets/logo.svg"
           class="logo"
           alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"
       /></a>
@@ -40,18 +44,20 @@
       <div class="mobile-menu">
         <input type="checkbox" id="menu-toggle" />
 
-        <label for="menu-toggle" class="menu-icon hamburger-label">
-          <img
-            src="./assets/hamburger-button.svg"
-            alt="Menüyü aç."
-          />
+        <label
+          for="menu-toggle"
+          class="menu-icon hamburger-label"
+          aria-label="Menüyü aç"
+        >
+          <img src="./assets/hamburger-button.svg" alt="" aria-hidden="true" />
         </label>
 
-        <label for="menu-toggle" class="menu-icon close-label">
-          <img
-            src="./assets/close-button.svg"
-            alt="Menüyü kapat."
-          />
+        <label
+          for="menu-toggle"
+          class="menu-icon close-label"
+          aria-label="Menüyü kapat"
+        >
+          <img src="./assets/close-button.svg" alt="" aria-hidden="true" />
         </label>
 
         <nav class="mobile-nav text--sm" aria-label="Ana Mobil Navigasyonu">
@@ -68,23 +74,32 @@
 
     <section class="contact-info site-content">
       <h2 class="text--grey text--lg text-600 text--center">İLETİŞİM</h2>
-      <div class="info-container site-content">
+      <div class="info-container">
         <div class="contact-item">
-          <h3 class="text--grey text--sm">Adres</h3>
-          <p class="text--dark-purple text--xs">Güneş Cad. No: 123, İzmir, Türkiye</p>
-        </div>
-        <div class="contact-item">
-          <h3 class="text--grey text--sm">Telefon</h3>
-          <p class="text--dark-purple text--xs"><a href="tel:+902321234567">+90 232 123 4567</a></p>
-        </div>
-        <div class="contact-item">
-          <h3 class="text--grey text--sm">E-posta</h3>
-          <p class="text--dark-purple text--xs"><a href="mailto:ornek@mail.com">info@renklimese.com</a></p>
-        </div>
-        <div class="contact-item">
-          <h3 class="text--grey text--sm">Bizi Takip Edin</h3>
+          <h3 class="text--dark-purple text--sm">Adres</h3>
           <p class="text--dark-purple text--xs">
-            <a href="https://www.instagram.com" target="_blank"
+            Güneş Cad. No: 123, İzmir, Türkiye
+          </p>
+        </div>
+        <div class="contact-item">
+          <h3 class="text--dark-purple text--sm">Telefon</h3>
+          <p class="text--dark-purple text--xs">
+            <a href="tel:+902321234567">+90 232 123 4567</a>
+          </p>
+        </div>
+        <div class="contact-item">
+          <h3 class="text--dark-purple text--sm">E-posta</h3>
+          <p class="text--dark-purple text--xs">
+            <a href="mailto:ornek@mail.com">info@renklimese.com</a>
+          </p>
+        </div>
+        <div class="contact-item">
+          <h3 class="text--dark-purple text--sm">Bizi Takip Edin</h3>
+          <p class="text--dark-purple text--xs">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram sayfamız"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </p>
@@ -115,7 +130,7 @@
               alt="Renkli Meşe Montessori Anaokulu Logo-renkli bir ağaç ve ağaca bağlı bir salıncak"
           /></a>
         </div>
-        <div class="footer__section about">
+        <div class="footer__section">
           <h3>Hakkımızda</h3>
           <p class="text--xs line-1-4 text--dark-purple">
             Renkli Meşe Montessori Anaokulu çocukların doğayla el ele,
@@ -123,22 +138,42 @@
             oynayarak keşfediyoruz.
           </p>
         </div>
-         <div class="footer__section quick-links">
-                <h3>Hızlı Bağlantılar</h3>
-                <ul class="list-style-none">
-                    <li><a href="index.html" class="text--xs text--dark-purple">Anasayfa</a></li>
-                    <li><a href="about.html" class="text--xs text--dark-purple">Hakkımızda</a></li>
-                    <li><a href="index.html#atolye" class="text--xs text--dark-purple">Atölyelerimiz</a></li>
-                    <li><a href="bizdeyasam.html" class="text--xs text--dark-purple">Bizde Yaşam</a></li>
-                    <li><a href="contact.html" class="text--xs text--dark-purple">İletişim</a></li>
-                </ul>
-            </div>
-        <div class="footer__section contact">
+        <div class="footer__section">
+          <h3>Hızlı Bağlantılar</h3>
+          <ul class="list-style-none">
+            <li>
+              <a href="index.html" class="text--xs text--dark-purple"
+                >Anasayfa</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text--xs text--dark-purple"
+                >Hakkımızda</a
+              >
+            </li>
+            <li>
+              <a href="index.html#atolye" class="text--xs text--dark-purple"
+                >Atölyelerimiz</a
+              >
+            </li>
+            <li>
+              <a href="bizdeyasam.html" class="text--xs text--dark-purple"
+                >Bizde Yaşam</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text--xs text--dark-purple"
+                >İletişim</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
           <h3>İletişim</h3>
           <ul class="list-style-none text--xs line-1-4">
-            <li><p>Adres: Güneş Cad. No: 123, İzmir, Türkiye</p></li>
-            <li><p>Email: info@renklimese.com</p></li>
-            <li><p>Telefon: +90 232 123 4567</p></li>
+            <li>Adres: Güneş Cad. No: 123, İzmir, Türkiye</li>
+            <li>Email: info@renklimese.com</li>
+            <li>Telefon: +90 232 123 4567</li>
           </ul>
         </div>
       </div>

@@ -1,24 +1,26 @@
-
-/* İletişim bilgileri düzeni */
 .info-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.map-container {
+  max-width: 100%;
 }
 
 .contact-item {
-  flex-basis: calc(50% - 5rem); /* 2 sütunlu düzen */
-  margin-bottom: 20px;
+  flex-basis: 100%;
+  margin-bottom: 1.25rem;
 }
 
 .contact-item h3 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-dark-purple);
+  padding-bottom: 0.5rem;
 }
 
-a {
-  color:var(--color-dark-purple);
+.contact-item a {
+  color: var(--color-dark-purple);
   text-decoration: none;
 }
 
@@ -26,12 +28,12 @@ a {
   text-decoration: underline;
 }
 
-.contact-item i{font-size:1.5rem;}
+.contact-item i {
+  font-size: 1.5rem;
+}
 
-
-/* Mobil için 1 sütun */
-@media (max-width: 768px) {
+@media (min-width: 1024.98px) {
   .contact-item {
-    flex-basis: 100%;
+    flex-basis: calc(50% - 5rem);
   }
 }

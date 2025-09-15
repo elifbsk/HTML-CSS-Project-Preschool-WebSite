@@ -6,7 +6,7 @@
   --site-content: 1184px;
   --color-melon: #f6b6ab;
   --color-grey: #555;
-  --color-white: #f6f3f7;
+  --color-ghost-white: #f6f3f7;
   --color-purple: #dacae1;
   --color-dark-purple: #56445d;
   --color-blue: #c0dfef;
@@ -26,6 +26,85 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.text--xs {
+  font-size: 0.875rem;
+}
+.text--sm {
+  font-size: 1rem;
+}
+.text--md {
+  font-size: 1.125rem;
+}
+.text--lg {
+  font-size: 1.25rem;
+}
+.text--xl {
+  font-size: 1.5rem;
+}
+.text--2xl {
+  font-size: 1.75rem;
+}
+.text--3xl {
+  font-size: 2.25rem;
+}
+
+.text--600 {
+  font-weight: 600;
+}
+
+.text--700 {
+  font-weight: 700;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.line-1-4 {
+  line-height: 1.4;
+}
+
+.text--grey {
+  color: var(--color-grey);
+}
+
+.text--purple {
+  color: var(--color-purple);
+}
+
+.text--dark-purple {
+  color: var(--color-dark-purple);
+}
+
+.text--ghost-white {
+  color: var(--color-ghost-white);
+}
+
+.text--melon {
+  color: var(--color-melon);
+}
+
+.site-content {
+  max-width: var(--site-content);
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+}
+
+.mt-0-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.radius-lg {
+  border-radius: var(--radius-large);
+}
+
+.list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-header {
@@ -111,11 +190,9 @@ li a {
 
 nav li a:hover {
   background-color: var(--color-melon);
-  color: var(--color-white);
+  color: var(--color-ghost-white);
   border-radius: var(--radius-medium);
 }
-
-/*HERO*/
 
 .hero {
   background-image: url(./assets/hero-picture-sm.webp);
@@ -123,12 +200,11 @@ nav li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
-  max-width: 100%;
   margin: 0 auto 1.5rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--color-ghost-white);
 }
 
 .sr-only {
@@ -138,103 +214,6 @@ nav li a:hover {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
 }
-
-/* Typography */
-
-.text--xs {
-  font-size: 0.875rem;
-}
-.text--sm {
-  font-size: 1rem;
-}
-.text--md {
-  font-size: 1.125rem;
-}
-.text--lg {
-  font-size: 1.25rem;
-}
-.text--xl {
-  font-size: 1.5rem;
-}
-.text--2xl {
-  font-size: 1.75rem;
-}
-.text--3xl {
-  font-size: 2.25rem;
-}
-
-
-.text--600 {
-  font-weight: 600;
-}
-
-.text--700 {
-  font-weight: 700;
-}
-
-.text--center {
-  text-align: center;
-}
-
-.line-1-4 {
-  line-height: 1.4;
-}
-
-/*Genel class'lar*/
-
-.site-content {
-  max-width: var(--site-content);
-  margin: 0 auto;
-  padding: 1rem 0.5rem;
-}
-
-.m-auto {
-  margin: 0 auto;
-}
-
-.mt-0-5 {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-  margin-bottom: 0;
-}
-
-.radius-lg {
-  border-radius: var(--radius-large);
-}
-
-.list-style-none {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/*COLORS*/
-
-.text--grey {
-  color: var(--color-grey);
-}
-
-.text--purple {
-  color: var(--color-purple);
-}
-
-.text--dark-purple {
-  color: var(--color-dark-purple);
-}
-
-.text--white {
-  color: var(--color-white);
-}
-
-.text--melon {
-  color: var(--color-melon);
-}
-
-/* HİKAYEMİZ BÖLÜMÜ */
 
 .hikayemiz {
   background-image: linear-gradient(
@@ -263,8 +242,6 @@ nav li a:hover {
   text-align: center;
 }
 
-/*MONTESSORI BÖLÜMÜ*/
-
 .montessori__container {
   display: flex;
   flex-direction: column;
@@ -272,7 +249,6 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
 }
 
 .montessori-box {
@@ -286,19 +262,11 @@ nav li a:hover {
     rgba(218, 202, 225, 0.6)
   );
   padding: 0.5rem;
-
-  flex: 1 1 100%;
 }
 
 .montessori-box img {
   max-width: 50px;
 }
-
-.montessori-box {
-  flex: 1 1 23%;
-}
-
-/*ATÖLYELERİMİZ BÖLÜMÜ*/
 
 .atolye__container {
   display: flex;
@@ -306,6 +274,8 @@ nav li a:hover {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-right: 3rem;
+  padding-left: 1rem;
 }
 
 .atolye__images {
@@ -334,7 +304,7 @@ nav li a:hover {
 
 .atolye__text-box {
   padding: 1rem 2rem 0.5rem 2rem;
-  min-width: 300px;
+  min-width: 250px;
   text-align: left;
   border: 3px solid var(--color-green);
   border-radius: var(--radius-large);
@@ -357,8 +327,6 @@ nav li a:hover {
   color: var(--color-dark-green);
   margin-right: 1rem;
 }
-
-/*PROGRAMLARIMIZ*/
 
 .programs__container {
   display: flex;
@@ -393,8 +361,6 @@ nav li a:hover {
   top: -20px;
   right: -10px;
 }
-
-/*BİZDEN KARELER*/
 
 .gallery__container {
   display: grid;
@@ -438,52 +404,49 @@ nav li a:hover {
   }
 }
 
-/*FOOTER*/
-
 footer {
   color: var(--color-dark-purple);
   padding: 0 1.5rem;
-  margin-top: auto; /* Sayfanın altına yapışmasını sağlar */
-
+  margin-top: auto;
 }
 
 .footer__container {
   display: flex;
-  flex-wrap: wrap; /* Küçük ekranlarda alt alta gelmesini sağlar */
-  border-top: 1px solid var(--color-purple)
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-purple);
 }
+
 .footer__section {
-  min-width: 200px; /* Minimum genişlik belirler */
+  min-width: 200px;
   margin: 0;
 }
 
-.footer__logo{
-  min-width:fit-content;
-  margin:0 auto;
-  padding-top:1rem;
-  
+.footer__logo {
+  min-width: fit-content;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
- .footer__logo img{
-    height: 80px;
-  }
+.footer__logo img {
+  height: 80px;
+}
 
 .footer__section h3 {
   color: var(--color-grey);
   margin-bottom: 1.3rem;
-  
 }
 
 .footer__section ul li {
   margin-bottom: 1rem;
 }
+
 .footer__section ul li a {
   text-decoration: none;
-  transition: color 0.3s ease;
 }
+
 .footer__section ul li a:hover {
   background-color: var(--color-purple);
-  color: var(--color-white);
+  color: var(--color-ghost-white);
   border-radius: var(--radius-medium);
 }
 
@@ -493,9 +456,6 @@ footer {
   margin-top: 1.5rem;
   border-top: 1px solid var(--color-purple);
 }
-
-
-
 
 /*------MEDIA SORGULARI-------------------*/
 
@@ -567,47 +527,31 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     height: 150px;
   }
 
-.footer__container { 
-  justify-content: space-between;
-  align-items: baseline;}
-
-
-.footer__section {
-  flex: 1; /* Esnek bir şekilde genişlemesini sağlar */
-  min-width: 150px; /* Minimum genişlik belirler */
-  margin: 0.5rem;
-}
-
-.footer__logo {
-  align-self: center;
-   padding:0;
-}
-
-.footer__logo img{
-    height: 120px;
+  .footer__container {
+    justify-content: space-between;
+    align-items: baseline;
   }
 
+  .footer__section {
+    flex: 1;
+    min-width: 150px;
+    margin: 0.5rem;
+  }
+
+  .footer__logo {
+    align-self: center;
+    padding: 0;
+  }
+
+  .footer__logo img {
+    height: 120px;
+  }
 }
 
 /*-------------------------*/
 /* LAPTOP SIZED AND LARGER */
 
 @media all and (min-width: 1024.98px) {
-  .main-header .logo {
-    height: 125px;
-  }
-
-  .main-header {
-    padding: 0.5rem 4rem 0.1rem;
-  }
-
-  .hero {
-    height: 70vh;
-
-  }
-
-  /* Typography */
-
   .text--xs {
     font-size: 1rem;
   }
@@ -641,6 +585,18 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
   .flex {
     flex-direction: row-reverse;
     gap: 2rem;
+  }
+
+  .main-header .logo {
+    height: 125px;
+  }
+
+  .main-header {
+    padding: 0.5rem 4rem 0.1rem;
+  }
+
+  .hero {
+    height: 70vh;
   }
 
   .hikayemiz__text {
@@ -682,16 +638,12 @@ tablet ve desktop geçişlerini min-width ile yönetmeye çalıştım*/
     max-width: 64px;
   }
 
-
-.footer__section {
-  min-width: 200px; /* Minimum genişlik belirler */
-  margin: 1.8rem;
-}
-
-
- .footer__logo img{
-    height: 150px;
+  .footer__section {
+    min-width: 200px;
+    margin: 1.8rem;
   }
 
-
+  .footer__logo img {
+    height: 150px;
+  }
 }

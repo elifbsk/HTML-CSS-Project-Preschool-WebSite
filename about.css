@@ -4,13 +4,11 @@
 }
 
 .hakkımızda__image picture {
-  border-radius: var(--radius-large); /* İstediğiniz değeri verin */
+  border-radius: var(--radius-large);
   overflow: hidden;
   display: inline-block;
   max-width: 300px;
 }
-
-/* TESTIMONIALS*/
 
 .testimonials {
   padding: 1.5rem;
@@ -23,17 +21,12 @@
   margin-bottom: 3rem;
 }
 
-/* Izgara kapsayıcısı */
 .testimonials-grid-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Esnek sütunlar */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
-/* Yorum kartı */
 .testimonial-card {
   background-color: #fff;
   padding: 2rem;
@@ -55,14 +48,12 @@
   margin-bottom: 1rem;
 }
 
-/* Yazar adı */
 .author {
   text-align: right;
   font-weight: bold;
   font-style: italic;
-  color: #d1759d;
+  color: var(--color-dark-purple);
 }
-
 
 @media all and (min-width: 768px) {
   .hakkımızda__image picture {
