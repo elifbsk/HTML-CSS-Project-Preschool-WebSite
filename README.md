@@ -1,22 +1,31 @@
-# Renkli Meşe Montessori Anaokulu Web Sitesi
+# 🌳 Renkli Meşe Montessori Anaokulu Web Sitesi
 
-Renkli Meşe Anaokulu için hazırlanan, modern ve duyarlı bir web sitesi projesi.
+Bu proje, **Renkli Meşe Montessori Anaokulu** için hazırlanmış bir tanıtım web sitesidir.  
+Site, anaokulunun Montessori yaklaşımını, eğitim programlarını ve iletişim bilgilerini kullanıcı dostu bir arayüzle sunar.  
 
-## Proje Hakkında
+## ✨ Özellikler
+- Anaokulu hakkında detaylı bilgi bölümü
+- Montessori yöntemi tanıtım sayfası
+- Galeri bölümü
+- Responsive (mobil, tablet, desktop) tasarım
+- Erişilebilirlik (a11y) öncelikli yapı
+- Basit ve modern tasarım
 
-Bu proje, çocukların sevgi, güven ve özgürlükle büyüdüğü, Montessori felsefesini benimsemiş bir anaokulunu tanıtmak amacıyla oluşturulmuştur. Web sitesi, anaokulunun temel değerlerini, eğitim programlarını, atölye çalışmalarını ve günlük yaşamını görsel ve metinsel olarak ziyaretçilere sunar.
+## 🛠 Kullanılan Teknolojiler
+- **HTML5**
+- **CSS3**
+- Flexbox & Grid
+- Font Awesome ikonları
+- Google Fonts
 
-### Ana Özellikler
+## 🚀 Kurulum ve Çalıştırma
 
-- **Duyarlı Tasarım (Responsive Design):** Mobil cihazlardan masaüstü bilgisayarlara kadar tüm ekran boyutlarına uyum sağlayan akıcı bir kullanıcı deneyimi.
-- **Montessori Yaklaşımı:** Anaokulunun temel felsefesi olan Montessori eğitiminin prensiplerini detaylandıran bölümler.
-- **Atölyeler:** Drama, Orff, Robotik Kodlama gibi zenginleştirilmiş atölye programlarının tanıtımı.
-- **Galeri:** Anaokulunun neşeli ve eğitici anlarını yansıtan fotoğraf galerisi.
-- **Hakkımızda ve İletişim Sayfaları:** Kurum hakkında bilgi edinme ve iletişime geçme imkanı sunan temel sayfalar.
+Not: Proje saf HTML ve CSS ile yapıldığı için ekstra bir kurulum gerektirmez.
 
-## Teknolojiler
+📌 Geliştirme Notları
+aria-label ve alt metinleri ile erişilebilirlik gözetilmiştir.
 
-Bu proje, aşağıdaki temel web teknolojileri kullanılarak geliştirilmiştir:
+prefers-reduced-motion desteği eklenmiştir.
 
-- **HTML5:** Sayfa yapısını oluşturmak için.
-- **CSS3:** Stil ve tasarım için, özellikle duyarlı (responsive) tasarım prensipleri göz önünde bulundurularak hazırlanmıştır.
+Mobil öncelikli (mobile-first) tasarım yaklaşımı kullanılmıştır.
+
