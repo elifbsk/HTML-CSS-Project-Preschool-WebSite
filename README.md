@@ -11,14 +11,14 @@ Site, anaokulunun Montessori yaklaşımını, eğitim programlarını ve iletiş
 - Erişilebilirlik (a11y) öncelikli yapı
 - Basit ve modern tasarım
 
-## 🛠 Kullanılan Teknolojiler
+### 🛠 Kullanılan Teknolojiler
 - **HTML5**
 - **CSS3**
 - Flexbox & Grid
 - Font Awesome ikonları
 - Google Fonts
 
-## 🚀 Kurulum ve Çalıştırma
+#### 🚀 Kurulum ve Çalıştırma
 
 Not: Proje saf HTML ve CSS ile yapıldığı için ekstra bir kurulum gerektirmez.
 
@@ -28,4 +28,5 @@ aria-label ve alt metinleri ile erişilebilirlik gözetilmiştir.
 prefers-reduced-motion desteği eklenmiştir.
 
 Mobil öncelikli (mobile-first) tasarım yaklaşımı kullanılmıştır.
+
 
